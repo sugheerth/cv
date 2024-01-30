@@ -163,8 +163,20 @@
                     </div>
                 </div>
 
+                <div id="previewContainer">Click here to preview document</div>
 
+                <iframe id="documentPreview" title="Document Preview"></iframe>
 
+                <script>
+                    const previewContainer = document.getElementById('previewContainer');
+                    const documentPreview = document.getElementById('documentPreview');
+
+                    previewContainer.addEventListener('click', () => {
+                        // Replace "your_document.pdf" with the actual path or URL of your document
+                        documentPreview.src = 'docs/resume.pdf';
+                        documentPreview.style.display = 'block';
+                    });
+                </script>
 
                 <div class="about__cta-box text-center">
                     <a href="#" class="btn btn--ghost">
