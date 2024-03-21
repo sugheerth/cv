@@ -11,21 +11,21 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/Astar_global_plan.mp4';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import dijkstra from '../../public/assets/images/portfolio/dijkstra.gif';
+import astar from '../../public/assets/images/portfolio/AStar.gif';
+import gap_follow from '../../public/assets/images/portfolio/gap_follow.gif';
+/*import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';*/
+import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -69,18 +69,14 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Sugheerth Sreedharan.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+       A competent <strong className="text-stone-100">Software Development Engineer</strong> with 5 years of experience in building cloud applications at <strong className="text-stone-100">Zoho Corporation</strong>
+        and an academic background in <strong className="text-stone-100">Mechanical Engineering from SASTRA University</strong>, Thanjavur, India. 
+        Currently pursuing Masters of Science in <strong className="text-stone-100">Engineering Science( Robotics )</strong> at <strong className="text-stone-100">University at Buffalo</strong>, The State University of New York 
+        with a zeal to excel in Robot Perception and Planning, Autonomous Driving and Software for Robotics.
       </p>
     </>
   ),
@@ -108,12 +104,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Buffalo, NY', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Cars, Movies, Series', Icon: SparklesIcon},
+    {label: 'Study', text: 'University at Buffalo, SUNY', Icon: AcademicCapIcon},
+    {label: 'Major', text: 'Robotics', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -129,12 +125,37 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Hindi',
+        level: 8,
       },
       {
-        name: 'Spanish',
+        name: 'Tamil',
+        level: 10,
+      },
+      {
+        name: 'Telugu',
+        level: 10,
+      },
+      {
+        name: 'German',
         level: 3,
+      }
+    ],
+  },
+  {
+    name: 'Backend development',
+    skills: [
+      {
+        name: 'Java',
+        level: 9,
+      },
+      {
+        name: 'Python',
+        level: 9,
+      },
+      {
+        name: 'GoLang',
+        level: 8,
       },
     ],
   },
@@ -142,51 +163,35 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
+        name: 'JavaScript',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'React',
+        level: 2,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Robotics',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
+        name: 'ROS',
         level: 9,
       },
       {
-        name: 'Flutter',
+        name: 'Autoware',
         level: 4,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'CARLA',
+        level: 4,
       },
+      {
+        name: 'AirSim',
+        level: 4,
+      },
+      
     ],
   },
 ];
@@ -196,24 +201,24 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
+    title: 'A-Star Global Path Planning',
+    description: 'A-Star Path Planning with successively updated goal points, simulated through Unity and visualized using RVIZ.',
+    url: 'assets/images/portfolio/AStar.gif',
+    image: astar,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
+    title: 'Dijkstra Global Path Planning',
+    description: 'Dijkstra Path Planning with successively updated goal points, simulated through Unity and visualized using RVIZ.',
+    url: 'assets/images/portfolio/dijkstra.gif',
+    image: dijkstra,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
+    title: 'Gap Follow - Local Planning',
+    description: 'Gap Follow to avoid obstacles using largest gap algorithm, simulated using Unity and visualized using RVIZ.',
+    url: 'assets/images/portfolio/gap_follow.gif',
+    image: gap_follow,
   },
-  {
+  /*{
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
@@ -260,7 +265,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage11,
-  },
+  },*/
 ];
 
 /**
@@ -268,10 +273,10 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Expected: Dec 2024',
+    location: 'University at Buffalo, SUNY',
+    title: 'Masters in Engineering Science(Robotics)',
+    content: <p>In my pursuit of a Master's degree, I cultivated a comprehensive skill set encompassing fundamental disciplines crucial to advancing within the field. Through rigorous academic study and practical application, I acquired proficiency in Robotics principles, Control Systems, Path Planning, Perception, Motion Planning, Simulation methodologies, and Machine Learning techniques. Additionally, I delved into emerging domains such as Reinforcement Learning and Deep Learning, enhancing my ability to design sophisticated intelligent systems. Moreover, my education emphasized the seamless integration of these concepts into practical, real-world applications, leveraging advanced Computer Vision methodologies. This diverse expertise positions me effectively to address complex challenges and spearhead innovation within the realm of Robotics technology and AI.</p>,
   },
   {
     date: 'March 2003',
@@ -340,23 +345,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'sugheert@buffalo.edu',
+      href: 'mailto:sugheert@buffalo.edu',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: '83 Custer Street, Buffalo, NY-14214',
+      href: 'https://maps.app.goo.gl/JHASHdqCSyhtTuhk8',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@_ploo.vee.uh.fahyl_',
+      href: 'https://www.instagram.com/_ploo.vee.uh.fahyl_/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'sugheerth',
+      href: 'https://github.com/sugheerth',
     },
   ],
 };
@@ -365,9 +370,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sugheerth'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'linkedin.com/in/sugheerth-s'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/_ploo.vee.uh.fahyl_/'},
 ];

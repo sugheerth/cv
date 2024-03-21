@@ -84,6 +84,26 @@ export interface PortfolioItem {
 }
 
 /**
+ * Portfolio section
+ */
+/*export interface PortfolioItem {
+  title: string;
+  description: string;
+  url: string;
+  src: string ;
+}*/
+
+/**
+ * Portfolio section
+ */
+export interface VideoItem {
+  title: string;
+  description: string;
+  src: string;
+  type: string;
+}
+
+/**
  * Resume section
  */
 export interface TimelineItem {
