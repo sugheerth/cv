@@ -8,15 +8,15 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+import astar from '../../public/assets/images/portfolio/AStar.gif';
+import dijkstra from '../../public/assets/images/portfolio/dijkstra.gif';
+import gap_follow from '../../public/assets/images/portfolio/gap_follow.gif';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import dijkstra from '../../public/assets/images/portfolio/dijkstra.gif';
-import astar from '../../public/assets/images/portfolio/AStar.gif';
-import gap_follow from '../../public/assets/images/portfolio/gap_follow.gif';
 /*import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
