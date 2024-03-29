@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Sugheerth Sreedharan\'s Portfolio',
+  description: "An aspiring Robotics and AI Engineer with a background in Mechanical Engineering and Core Software Development",
 };
 
 /**
