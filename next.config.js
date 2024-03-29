@@ -40,6 +40,7 @@ const nextConfig = {
       },
     ],
   },
+  output: 'export',
   compress: true,
   generateEtags: true,
   pageExtensions: ['tsx', 'mdx', 'ts'],
